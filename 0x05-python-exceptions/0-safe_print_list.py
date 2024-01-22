@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+
 def safe_print_list(my_list=[], x=0):
-    nume = 0
+    sub_total = 0
     for i in range(x):
         try:
-            print(my_list[i], end="")
-            nume += 1
+            print(f"{my_list[i]}", end="")
+            sub_total += 1
         except IndexError:
             break
-    print("")
-    Return
+    print()
+    return(sub_total)
